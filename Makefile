@@ -11,4 +11,3 @@ BOARD_TAG    = uno
 ARDUINO_PORT = /dev/ttyACM0
 
 include $(ARDUINO_MK_DIR)/arduino-mk/Arduino.mk
-

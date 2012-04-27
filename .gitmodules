@@ -1,0 +1,3 @@
+[submodule "contrib/Arduino-Makefile"]
+	path = contrib/Arduino-Makefile
+	url = git@github.com:brotchie/Arduino-Makefile.git
