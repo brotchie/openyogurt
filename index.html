@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Openyogurt by brotchie</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Openyogurt</h1>
+        <p>Open source yogurt maker combining an Arduino with slow cooker.</p>
+        <p class="view"><a href="https://github.com/brotchie/openyogurt">View the Project on GitHub <small>brotchie/openyogurt</small></a></p>
+        <ul>
+          <li><a href="https://github.com/brotchie/openyogurt/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/brotchie/openyogurt/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/brotchie/openyogurt">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>This details the design of the OpenYogurt DIY yogurt maker.</p>
+
+<p>It is possible to ferment your own yogurt using a slow cooker. The ideal environment for the yogurt bacteria is 40 degrees celcius. At temperatures lower than this the bacterica aren't active; that is, lactose is not being eaten. If the temperature is allowed to rise higher than this the bacteria die; thus no yogurt either.</p>
+
+<p>I'll be following the yogurt steps used in the Specific Carbohydrate Diet (SCD) detailed at <a href="http://www.breakingtheviciouscycle.info/beginners_guide/yoghurt/yog_pict_guide.htm">http://www.breakingtheviciouscycle.info/beginners_guide/yoghurt/yog_pict_guide.htm</a>.</p>
+
+<p>When milk is fermented for at least 24 hours the friendly bacteria eat ALL the lactose, thus you're left with lactose free, very healthy yogurt. Most store bought yogurts are only fermented for 4 hours, thus there is still a non-trivial amount of left over lactose; too much to be easily digestible by lactose-intolerant individuals.</p>
+
+<p>I've attempted to make yogurt using my slow cooker before but you're relying on an open loop control system. I've set the slow cooker to the "keep warm" setting in an attempt to maintain a 40 degree temperature; this has not work, the yoghurt temperature has shot up to 50 degrees celcius, killing the healthy bacteria!</p>
+
+<p>The OpenYogurt project is a closed loop control system that monitors the temperature of the fermenting yogurt, switching the slow cooker on and off, to maintain temperature at the optimal value.</p>
+
+<p>At the minimum OpenYogurt comprises:</p>
+
+<ul>
+<li>An Arduino microcontroller (Uno, but any should work);</li>
+<li>A waterproof Waterproof DS18B20 temperature probe (<a href="http://arduino-direct.com/sunshop/index.php?l=product_detail&amp;p=151">http://arduino-direct.com/sunshop/index.php?l=product_detail&amp;p=151</a>);</li>
+<li>A relay board (<a href="http://arduino-direct.com/sunshop/index.php?l=product_detail&amp;p=218">http://arduino-direct.com/sunshop/index.php?l=product_detail&amp;p=218</a>);</li>
+<li>A mains powered slow cooker.</li>
+</ul><p>The Arduino uses the temperature probe to monitor the yogurt culture, switching the slow cooker on and off using the relay when the temperature goes below some lower bound.</p>
+
+<p>Extensions include:</p>
+
+<ul>
+<li>An LCD module to monitor the length of time that the culture has been fermenting and to view history of culture temperature;</li>
+<li>3 axis joystick (Z axis is a button) so adjust the control system parameters and target temperature.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/brotchie">brotchie</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
