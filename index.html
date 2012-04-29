@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html>
   <head>
@@ -24,6 +26,17 @@
           <li><a href="https://github.com/brotchie/openyogurt">Fork On <strong>GitHub</strong></a></li>
         </ul>
       </header>
+      <section>
+        <h2>Blog Posts</h2>
+        <div>
+          <ul class="posts">
+            {% for post in site.posts %}
+              <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </section>
       <section>
         <p>This details the design of the OpenYogurt DIY yogurt maker.</p>
 
@@ -58,7 +71,7 @@
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+
     <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
