@@ -1,3 +1,14 @@
+/*
+ 
+ Copyright (C) 2012 James Brotchie
+
+ This file is part of open-yogurt, an open-source design
+ for an automated yoghurt maker:
+
+    https://github.com/brotchie/openyogurt
+
+*/
+
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include <LiquidCrystal_I2C.h>

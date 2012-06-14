@@ -1,3 +1,13 @@
+/*
+ 
+ Copyright (C) 2012 James Brotchie
+
+ This file is part of open-yogurt, an open-source design
+ for an automated yoghurt maker:
+
+    https://github.com/brotchie/openyogurt
+
+*/
 #ifndef __INCLUDE_JOYSTICK_H
 #define __INCLUDE_JOYSTICK_H
 
